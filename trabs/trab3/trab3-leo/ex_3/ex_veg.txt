@@ -1,0 +1,40 @@
+Separar o que é vegetação do que não é vegetação:
+
+NDVI = (nir - red) ./ (nir + red) (nir e red são matrizes)
+
+nir = infravermelho próximo
+
+NDVI = imagem em tons de cinza
+
+Linearizar:
+Tranformar em imagem binária: pixels acima de 0.3 viram 1 (exemplo)
+veg = NVDI > 0.3;
+
+gavea_veg = gavea .* veg;
+
+juntar as 3 bandas no ndvi binário
+
+gavea = cat(3, gavea_r, gavea_g, gavea_b);
+
+Solução:
+gn = imread('gavea_nir.png');
+gr = imread('gavea_r.png');
+gg = imread('gavea_g.png');
+gb = imread('gavea_b.png');
+
+gn = rgb2gray(gn);
+gr = rgb2gray(gr);
+gg = rgb2gray(gg);
+gb = rgb2gray(gb);
+
+gn = im2double(gn);
+gr = im2double(gr);
+
+NDVI = (gn - gr) ./ (gn + gr);
+
+veg = NDVI > 0.15; // 0.1 - 0.15
+
+imshow(veg);
+
+// TODO: verde no lugar do branco
+

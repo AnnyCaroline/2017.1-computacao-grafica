@@ -1,0 +1,21 @@
+Vai me dar os pontos : 
+P1x P1y P1'x P1'y
+P2x P2y P2'x P2'y
+P3x P3y P3'x P3'y
+P4x P4y P4'x P4'y   em Matriz
+
++ Caminho da imagem
+
+----------------------------
+Com isso, vou descobrir a matriz T.
+Depois inverto a matriz T (função inv).
+Imagem original(inicialmente zerada - função zeros) e imagem transformada.
+
+Pega cada pixel da imagem com zeros, aplico a transformação inversa e pego o ponto na imagem original.
+Tenho que arredondar, pq não vai dar valor inteiro.
+Pego a intensidade do pixel e aplico na minha matriz vazia.
+
+Note que posso pegar um pixel fora da imagem original. Se isso acontecer, deixo o pixel preto.
+
+--------------------------------
+X = inv(A' * A) * A' * L

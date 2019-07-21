@@ -1,0 +1,41 @@
+
+ILUMINACAO
+	- desativar/reativar
+
+BRAÇO
+	- girar 180 com '4' 
+	- girar 270 com '6'
+	- subir tudo com '7' 
+	- descer tudo com '1'
+	- subir tudo com '8' 
+	- descer tudo com '2'
+	- girar 90 com '4' 
+	- dar zoom máximo com pageUp
+	- descer câmera ao máximo com \/
+	- abrir garra ao máximo com +
+	- fechar garra ao máximo com -
+	- voltar garra para o tamanho original com +
+	- voltar zoom para original com pageDown
+	- voltar câmera para o original com /\
+
+MOVIMENTO CAMERA
+	- zoom mínimo pg down
+	- zoom máximo pg up
+	- vertical máximo /\
+	- vertical mínimo \/
+	- vertical original /\
+	- horizontal 180 para esquerda <
+	- horizontal 90 para direita >
+	- voltar original
+
+MOVIMENTO ROBO
+	- girar 180 com 'e'
+	- girar 270 com 'q'
+	- andar até a frente com 's'
+	- andar até o lado com 'a'
+	- andar até o fundo com 'w'
+	- andar até o outro lado com 'd'
+	- andar até a frente com 's'
+	- andar até o centro intercalando 'a' e 'w'
+
+
